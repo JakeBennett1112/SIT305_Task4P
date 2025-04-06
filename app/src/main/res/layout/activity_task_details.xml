@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Shows the title of the task-->
+    <TextView
+        android:id="@+id/textViewTaskTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Task Title"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <!-- Shows the description of the task -->
+    <TextView
+        android:id="@+id/textViewTaskDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/task_description"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Shows the tasks due date-->
+    <TextView
+        android:id="@+id/textViewTaskDueDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/due_date_yyyy_mm_dd"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Button so we can edit the task -->
+    <Button
+        android:id="@+id/buttonEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_task"
+        android:background="@android:color/holo_red_light"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Button so we can delete the task -->
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/delete_task"
+        android:background="@android:color/holo_red_light"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>
